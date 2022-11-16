@@ -303,17 +303,21 @@ document.addEventListener("keydown", function(event) {
   if (event.keyCode == 39) {
     //right arrow
     gameState.rectVelocity.x = gameState.playerSpeed;
+    gameState.rectVelocity.y = 0;
   }
   if (event.keyCode == 37) {
     //left arrow
     gameState.rectVelocity.x = -gameState.playerSpeed;
+    gameState.rectVelocity.y = 0;
   }
   if (event.keyCode == 40) {
     //up arrow
+    gameState.rectVelocity.x = 0;
     gameState.rectVelocity.y = gameState.playerSpeed;
   }
   if (event.keyCode == 38) {
     //down arrow
+    gameState.rectVelocity.x = 0;
     gameState.rectVelocity.y = -gameState.playerSpeed;
   }
   if (event.keyCode == 27) {
