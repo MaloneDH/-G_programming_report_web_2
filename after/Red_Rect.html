@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="Red_Rect.css"/>
+    </head>
+    <body>
+        <div id="menu">
+            <div id="title">Red <span class="blue">Rect</span></div>
+            <ul class="nav">
+                <li class="btn" id="to_game">game start</li>
+                <li class="btn" id="to_option">option</li>
+                <li class="btn" id="to_credit">credit</li>
+            </ul>
+        </div>
+        
+        <div class="game center" id="game">
+            <div class="canvas-wrapper">
+                <p class="interface" id="score"></p>
+                <p class="interface" id="stopwatch"><span id="seconds">00</span>:<span id="tens">00</span></p>
+                <p class="interface" id="HP"></p>
+                <div id="pause_page"><p>일시 정지</p></div>
+                <canvas id="canvas-top"></canvas>
+            </div>
+        </div>
+        
+        <div class="modal">
+            <div class="modal_body">
+                ---------------
+                <span id="result_game"></span>
+                <div id="modal_btn" >
+                    <button class="btn" id="restart">Menu</button>
+                    <button class="btn" id="exit">Quit</button>
+                </div><br>
+                ---------------
+            </div>
+        </div>      
+        
+        <div id="option">
+            <h1> < 옵션 > </h1>
+            <hr>
+            <h2> < 난이도 > </h2>
+            <fieldset>
+                <label>
+                    <input type="radio" name="contact" id="normal" checked />
+                    <span>normal</span>
+                </label>
+                <label>
+                    <input type="radio" name="contact" id="hard" />
+                    <span>hard</span>
+                </label>
+            </fieldset>
+            <hr>
+            <h2>< 테마 ></h2>
+            <fieldset>
+                <label>
+                    <input type="radio" name="theme" value="easy" id="day" />
+                    <span>day</span>
+                </label>
+                <label>
+                    <input type="radio" name="theme" value="normal" id="night" checked />
+                    <span>night</span>
+                </label>
+            </fieldset>
+            <button class="btn returnMain" id="option_main">main</button>
+        </div>
+
+        <div id="credit">
+            <h1>< 제작자 정보 ></h1>
+            <hr>
+            <h2>제작자</h2>  조대훈 <br>
+            <hr>
+            <h2>깃허브</h2><br>
+            <hr>
+            <h2>원작 게임</h2>  https://devdevshow.com/javascript-games-examples-for-beginners/<br><br>
+            <button class="btn returnMain" id="credit_main">main</button>
+        </div> 
+        <script type="text/javascript" src="Red_Rect.js"></script>
+    </body>
+</html>
