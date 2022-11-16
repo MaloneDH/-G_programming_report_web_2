@@ -38,8 +38,7 @@ const hp=document.getElementById("HP");
 
 let difficulty = 0;
 
-s_btn.addEventListener('click', ()=>{       
-  mbgm.muted=true;                  
+s_btn.addEventListener('click', ()=>{                 
   menu.style.display='none';              //main->game
   game.style.display='block';
   gameState = {                   
